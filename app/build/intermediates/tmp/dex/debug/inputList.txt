@@ -1,0 +1,2 @@
+/home/nick/AndroidstudioProjects/MeasureMe/app/build/intermediates/classes/debug
+/home/nick/AndroidstudioProjects/MeasureMe/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-fd5b10223b9481077ffb8e15ed45bb3bbc6bece4.jar

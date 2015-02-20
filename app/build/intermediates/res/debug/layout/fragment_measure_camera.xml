@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:orientation="vertical" >
+        
+        <SurfaceView
+            android:id="@+id/measure_camera_surfaceView"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:layout_width="match_parent">
+        </SurfaceView>
+        
+        <Button
+            android:id="@+id/measure_camera_takePictureButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:text="@string/take_picture"
+            android:textColor="@android:color/white" />
+        
+    </LinearLayout>
+    
+    <FrameLayout android:id="@+id/measure_camera_progressContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" >
+        
+        <ProgressBar style="@android:style/Widget.ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+        
+    </FrameLayout>
+    
+    <ZoomControls
+            android:id="@+id/measure_camera_zoom_controls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:visibility="visible" />
+    
+
+</FrameLayout><!-- From: file:/home/nick/AndroidstudioProjects/MeasureMe/app/src/main/res/layout/fragment_measure_camera.xml -->
